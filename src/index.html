@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="block">
+				<div class='block__container'>
+					<div class="block__row">
+						<ul>
+							<li style="margin-bottom: 10px;">
+								<a href="home.html"> Главная</a>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<a href="cards.html">Карточка товара</a>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<a href="catalog.html">Каталог</a>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<a href="popups.html">Попапы</a>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<a href="photobank.html">Фотобанк</a>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<a href="mistake.html">404</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+
+</body>
+
+</html>

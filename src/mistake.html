@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="breadcrumb">
+				<ul class="breadcrumb__list breadcrumb__container">
+					<li class="breadcrumb__item">
+						<span><a href="javascript:void(0);" style="--icon: url('../img/cards/01.svg');"><span>
+									Дэшборд
+								</span></a></span>
+					</li>
+					<li class="breadcrumb__item">
+						<span><a href="javascript:void(0);" style="--icon: url('../img/cards/01.svg');"><span>
+									Каталог
+								</span></a></span>
+					</li>
+					<li class="breadcrumb__item breadcrumb__item-link--active">
+						<span>
+							<span>Страница не найдена</span>
+						</span>
+					</li>
+				</ul>
+
+
+				<section class="mistake">
+					<div class='mistake__container'>
+						<div class="mistake__inner">
+							<div class="mistake__img">
+								<img data-src="./img/mistake/01.png" alt="">
+							</div>
+							<div class="mistake__content">
+								<div class="mistake__title">Такая страница не найдена</div>
+								<div class="mistake__btns">
+									<div class="mistake__btn mistake__btn--white">
+										<a href="javascript:void(0);" class="mistake__link btn">На главную</a>
+									</div>
+									<div class="mistake__btn">
+										<a href="javascript:void(0);" class="mistake__link btn">Смотреть каталог</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+		</main>
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

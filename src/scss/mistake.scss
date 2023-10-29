@@ -1,0 +1,138 @@
+//========================================================================================================================================================
+.mistake {
+  width: 100%;
+  padding: rrem(140) rrem(0);
+
+  @media (max-width: $mobile) {
+    padding: rrem(24) rrem(0);
+  }
+  // .mistake__container
+
+  &__container {
+    @media (max-width: $mobile) {
+      padding: rrem(0) rrem(16);
+    }
+  }
+
+  // .mistake__inner
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rrem(80);
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: rrem(23);
+    }
+  }
+
+  // .mistake__img
+
+  &__img {
+    @media (min-width: $tablet) {
+      flex: 0 0 rrem(460);
+    }
+    img,
+    picture {
+      width: rrem(460);
+      max-width: 100%;
+
+      height: rrem(333);
+      max-height: 100%;
+
+      object-fit: cover;
+
+      @media (max-width: $mobile) {
+        height: rrem(238);
+        object-fit: contain;
+      }
+    }
+  }
+
+  // .mistake__content
+
+  &__content {
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+
+  // .mistake__title
+
+  &__title {
+    font-size: rrem(50);
+    line-height: rrem(60); /* 120% */
+    margin-bottom: rrem(34);
+
+    @media (max-width: $tablet) {
+      font-size: rrem(35);
+      line-height: rrem(40); /* 120% */
+      text-align: center;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: rrem(24);
+      line-height: rrem(30); /* 125% */
+      margin-bottom: rrem(25);
+    }
+  }
+
+  // .mistake__btns
+
+  &__btns {
+    display: flex;
+    gap: rrem(16);
+    padding: 0px rrem(10);
+
+    @media (max-width: em(1365)) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $tablet) {
+      flex-direction: row;
+    }
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  // .mistake__btn
+
+  &__btn {
+    flex: 0 1 50%;
+  }
+
+  // .mistake__btn--white
+
+  &__btn--white {
+    .mistake__link {
+      background: var(--whte);
+      border: rrem(1) solid #333;
+      color: #333;
+
+      &:hover {
+        border: rrem(1) solid var(--blue);
+        color: var(--whte);
+        background: var(--blue);
+      }
+    }
+  }
+
+  // .mistake__link
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: $mobile) {
+      font-size: rrem(22);
+      letter-spacing: rrem(0.44);
+    }
+  }
+}
+
+//========================================================================================================================================================

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="breadcrumb">
+				<ul class="breadcrumb__list breadcrumb__container">
+					<li class="breadcrumb__item">
+						<span><a href="javascript:void(0);" style="--icon: url('../img/cards/01.svg');"><span>
+									Главная
+								</span></a></span>
+					</li>
+					<li class="breadcrumb__item">
+						<span><a href="javascript:void(0);" style="--icon: url('../img/cards/01.svg');"><span>
+									Каталог
+								</span></a></span>
+					</li>
+					<li class="breadcrumb__item breadcrumb__item-link--active">
+						<span>
+							<span>Фотобанк</span>
+						</span>
+					</li>
+				</ul>
+			</div>
+			<section class="photobank ">
+				<div class='photobank__container'>
+					<h1 class="photobank__title _title">Фотобанк</h1>
+					<div class="photobank__top" data-item="photobank">
+						<div class="top-aside">
+							<div class="top-aside__title">Фильтр</div>
+							<button type="button" title="Закрыть" class="top-aside__btn" data-item-close="photobank">
+								<img data-src="./img/icon/13.svg" alt="">
+							</button>
+						</div>
+						<form action="#" class="photobank__filter filter ">
+							<div class="filter__item">
+								<label for="in1" class="filter__label">Период</label>
+								<input autocomplete="off" type="text" data-datepicker="rage" name="form[]"
+									data-error="Ошибка" placeholder="18.10.2023-24.10.2023" class="input" id="inp1">
+							</div>
+							<div class="filter__item">
+								<label for="in2" class="filter__label">Тип мебели</label>
+								<select name="form[]" class="form" id="in2">
+									<option value="1" selected>Тип</option>
+									<option value="2">Пункт №2</option>
+									<option value="3">Пункт №3</option>
+									<option value="4">Пункт №4</option>
+								</select>
+							</div>
+							<div class="filter__item">
+								<label for="in3" class="filter__label">Мебель</label>
+								<select name="form[]" class="form" id="in3">
+									<option value="1" selected>Тип</option>
+									<option value="2">Пункт №2</option>
+									<option value="3">Пункт №3</option>
+									<option value="4">Пункт №4</option>
+								</select>
+							</div>
+							<div class="filter__item">
+								<label for="in3" class="filter__label">Материал каркаса / Материал ткани</label>
+								<select name="form[]" class="form" id="in3">
+									<option value="1" selected>Материал</option>
+									<option value="2">Пункт №2</option>
+									<option value="3">Пункт №3</option>
+									<option value="4">Пункт №4</option>
+								</select>
+							</div>
+							<div class="filter__item">
+								<label for="in3" class="filter__label">Материал фасада / Цвет ткани</label>
+								<select name="form[]" class="form" id="in3">
+									<option value="1" selected>Материал</option>
+									<option value="2">Пункт №2</option>
+									<option value="3">Пункт №3</option>
+									<option value="4">Пункт №4</option>
+								</select>
+							</div>
+							<div class="filter__item">
+								<button type="submit" class="btn">Найти</button>
+							</div>
+							<div class="filter__item filter__item--btn">
+								<div class="filter__btns">
+									<div class="filter__btn">
+										Мягкая мебель <button type="button"
+											style="--icon: url('../img/icon/22.svg');"></button>
+									</div>
+									<div class="filter__btn">
+										Матрас <button type="button"
+											style="--icon: url('../img/icon/22.svg');"></button>
+									</div>
+									<div class="filter__btn">
+										Черный <button type="button"
+											style="--icon: url('../img/icon/22.svg');"></button>
+									</div>
+									<div class="filter__btn filter__btn--all">
+										Сбросить все <button type="button"
+											style="--icon: url('../img/icon/22.svg');"></button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="photobank__row  js-type columns">
+						<div class="photobank__types">
+							<nav class="photobank__type">
+								<button type="button" class="photobank__type-item js-type-item "
+									data-type="list">Список</button>
+								<button type="button" class="photobank__type-item js-type-item _active"
+									data-type="columns">Галерея</button>
+							</nav>
+							<button type="button" title="Открыть фильтр" class="photobank__btn " data-open="photobank">
+								<img data-src="./img/icon/12.svg" alt="">
+							</button>
+						</div>
+						<div class="photobank__items">
+							<div class="photobank__item column-product ">
+								<div class="column-product__slide">
+									<div class="column-product__body">
+										<div class="column-product__slider js-slider-column">
+											<div class="column-product__swiper">
+												<div class="column-product__block">
+													<div class="column-product__img " data-popup="#popupCards"
+														style="background-image: url(../img/popular/01.png);">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+												<div class="column-product__block">
+													<div class="column-product__img "
+														style="background-image: url(../img/popular/01.png);"
+														data-popup="#popupCards">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+												<div class="column-product__block">
+													<div class="column-product__img "
+														style="background-image: url(../img/popular/01.png);"
+														data-popup="#popupCards">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="column-product__arrows slider-nav">
+												<button type="button"
+													class="column-product__arrow column-product__arrow-prev slider-nav__arrow slider-nav__arrow-prev"
+													style="--icon: url('../img/icon/02.svg');"></button>
+												<button type="button"
+													class="column-product__arrow column-product__arrow-next slider-nav__arrow slider-nav__arrow-next"
+													style="--icon: url('../img/icon/03.svg');"></button>
+											</div>
+										</div>
+
+										<div class="column-product__content content-popular">
+											<div class="content-popular__name">327С_ШП_2 Шкаф платяной 2-секционный
+											</div>
+											<div class="content-popular__text">Дуб с натуральным
+												Белый песок UI156 579</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="photobank__item column-product ">
+								<div class="column-product__slide">
+									<div class="column-product__body">
+										<div class="column-product__slider js-slider-column">
+											<div class="column-product__swiper">
+												<div class="column-product__block">
+													<div class="column-product__img " data-popup="#popupCards"
+														style="background-image: url(../img/popular/01.png);">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+												<div class="column-product__block">
+													<div class="column-product__img "
+														style="background-image: url(../img/popular/01.png);"
+														data-popup="#popupCards">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+												<div class="column-product__block">
+													<div class="column-product__img "
+														style="background-image: url(../img/popular/01.png);"
+														data-popup="#popupCards">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="column-product__arrows slider-nav">
+												<button type="button"
+													class="column-product__arrow column-product__arrow-prev slider-nav__arrow slider-nav__arrow-prev"
+													style="--icon: url('../img/icon/02.svg');"></button>
+												<button type="button"
+													class="column-product__arrow column-product__arrow-next slider-nav__arrow slider-nav__arrow-next"
+													style="--icon: url('../img/icon/03.svg');"></button>
+											</div>
+										</div>
+
+										<div class="column-product__content content-popular">
+											<div class="content-popular__name">327С_ШП_2 Шкаф платяной 2-секционный
+											</div>
+											<div class="content-popular__text">Дуб с натуральным
+												Белый песок UI156 579</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="photobank__item column-product ">
+								<div class="column-product__slide">
+									<div class="column-product__body">
+										<div class="column-product__slider js-slider-column">
+											<div class="column-product__swiper">
+												<div class="column-product__block">
+													<div class="column-product__img" data-popup="#popupCards"
+														style="background-image: url(../img/popular/01.png);">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+												<div class="column-product__block">
+													<div class="column-product__img "
+														style="background-image: url(../img/popular/01.png);"
+														data-popup="#popupCards">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+												<div class="column-product__block">
+													<div class="column-product__img "
+														style="background-image: url(../img/popular/01.png);"
+														data-popup="#popupCards">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="column-product__arrows slider-nav">
+												<button type="button"
+													class="column-product__arrow column-product__arrow-prev slider-nav__arrow slider-nav__arrow-prev"
+													style="--icon: url('../img/icon/02.svg');"></button>
+												<button type="button"
+													class="column-product__arrow column-product__arrow-next slider-nav__arrow slider-nav__arrow-next"
+													style="--icon: url('../img/icon/03.svg');"></button>
+											</div>
+										</div>
+
+										<div class="column-product__content content-popular">
+											<div class="content-popular__name">327С_ШП_2 Шкаф платяной 2-секционный
+											</div>
+											<div class="content-popular__text">Дуб с натуральным
+												Белый песок UI156 579</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="photobank__item column-product ">
+								<div class="column-product__slide">
+									<div class="column-product__body">
+										<div class="column-product__slider js-slider-column">
+											<div class="column-product__swiper">
+												<div class="column-product__block">
+													<div class="column-product__img " data-popup="#popupCards"
+														style="background-image: url(../img/popular/01.png);">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+												<div class="column-product__block">
+													<div class="column-product__img "
+														style="background-image: url(../img/popular/01.png);"
+														data-popup="#popupCards">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+												<div class="column-product__block">
+													<div class="column-product__img "
+														style="background-image: url(../img/popular/01.png);"
+														data-popup="#popupCards">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="column-product__arrows slider-nav">
+												<button type="button"
+													class="column-product__arrow column-product__arrow-prev slider-nav__arrow slider-nav__arrow-prev"
+													style="--icon: url('../img/icon/02.svg');"></button>
+												<button type="button"
+													class="column-product__arrow column-product__arrow-next slider-nav__arrow slider-nav__arrow-next"
+													style="--icon: url('../img/icon/03.svg');"></button>
+											</div>
+										</div>
+
+										<div class="column-product__content content-popular">
+											<div class="content-popular__name">327С_ШП_2 Шкаф платяной 2-секционный
+											</div>
+											<div class="content-popular__text">Дуб с натуральным
+												Белый песок UI156 579</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="photobank__item column-product ">
+								<div class="column-product__slide">
+									<div class="column-product__body">
+										<div class="column-product__slider js-slider-column">
+											<div class="column-product__swiper">
+												<div class="column-product__block">
+													<div class="column-product__img " data-popup="#popupCards"
+														style="background-image: url(../img/popular/01.png);">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+												<div class="column-product__block">
+													<div class="column-product__img "
+														style="background-image: url(../img/popular/01.png);"
+														data-popup="#popupCards">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+												<div class="column-product__block">
+													<div class="column-product__img "
+														style="background-image: url(../img/popular/01.png);"
+														data-popup="#popupCards">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="column-product__arrows slider-nav">
+												<button type="button"
+													class="column-product__arrow column-product__arrow-prev slider-nav__arrow slider-nav__arrow-prev"
+													style="--icon: url('../img/icon/02.svg');"></button>
+												<button type="button"
+													class="column-product__arrow column-product__arrow-next slider-nav__arrow slider-nav__arrow-next"
+													style="--icon: url('../img/icon/03.svg');"></button>
+											</div>
+										</div>
+
+										<div class="column-product__content content-popular">
+											<div class="content-popular__name">327С_ШП_2 Шкаф платяной 2-секционный
+											</div>
+											<div class="content-popular__text">Дуб с натуральным
+												Белый песок UI156 579</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="photobank__item column-product ">
+								<div class="column-product__slide">
+									<div class="column-product__body">
+										<div class="column-product__slider js-slider-column">
+											<div class="column-product__swiper">
+												<div class="column-product__block">
+													<div class="column-product__img " data-popup="#popupCards"
+														style="background-image: url(../img/popular/01.png);">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+												<div class="column-product__block">
+													<div class="column-product__img "
+														style="background-image: url(../img/popular/01.png);"
+														data-popup="#popupCards">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+												<div class="column-product__block">
+													<div class="column-product__img "
+														style="background-image: url(../img/popular/01.png);"
+														data-popup="#popupCards">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="column-product__arrows slider-nav">
+												<button type="button"
+													class="column-product__arrow column-product__arrow-prev slider-nav__arrow slider-nav__arrow-prev"
+													style="--icon: url('../img/icon/02.svg');"></button>
+												<button type="button"
+													class="column-product__arrow column-product__arrow-next slider-nav__arrow slider-nav__arrow-next"
+													style="--icon: url('../img/icon/03.svg');"></button>
+											</div>
+										</div>
+
+										<div class="column-product__content content-popular">
+											<div class="content-popular__name">327С_ШП_2 Шкаф платяной 2-секционный
+											</div>
+											<div class="content-popular__text">Дуб с натуральным
+												Белый песок UI156 579</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="photobank__item column-product ">
+								<div class="column-product__slide">
+									<div class="column-product__body">
+										<div class="column-product__slider js-slider-column">
+											<div class="column-product__swiper">
+												<div class="column-product__block">
+													<div class="column-product__img " data-popup="#popupCards"
+														style="background-image: url(../img/popular/01.png);">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+												<div class="column-product__block">
+													<div class="column-product__img "
+														style="background-image: url(../img/popular/01.png);"
+														data-popup="#popupCards">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+												<div class="column-product__block">
+													<div class="column-product__img "
+														style="background-image: url(../img/popular/01.png);"
+														data-popup="#popupCards">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="column-product__arrows slider-nav">
+												<button type="button"
+													class="column-product__arrow column-product__arrow-prev slider-nav__arrow slider-nav__arrow-prev"
+													style="--icon: url('../img/icon/02.svg');"></button>
+												<button type="button"
+													class="column-product__arrow column-product__arrow-next slider-nav__arrow slider-nav__arrow-next"
+													style="--icon: url('../img/icon/03.svg');"></button>
+											</div>
+										</div>
+
+										<div class="column-product__content content-popular">
+											<div class="content-popular__name">327С_ШП_2 Шкаф платяной 2-секционный
+											</div>
+											<div class="content-popular__text">Дуб с натуральным
+												Белый песок UI156 579</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="photobank__item column-product ">
+								<div class="column-product__slide">
+									<div class="column-product__body">
+										<div class="column-product__slider js-slider-column">
+											<div class="column-product__swiper">
+												<div class="column-product__block">
+													<div class="column-product__img " data-popup="#popupCards"
+														style="background-image: url(../img/popular/01.png);">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+												<div class="column-product__block">
+													<div class="column-product__img "
+														style="background-image: url(../img/popular/01.png);"
+														data-popup="#popupCards">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+												<div class="column-product__block">
+													<div class="column-product__img "
+														style="background-image: url(../img/popular/01.png);"
+														data-popup="#popupCards">
+														<img data-src="./img/popular/01.png" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="column-product__arrows slider-nav">
+												<button type="button"
+													class="column-product__arrow column-product__arrow-prev slider-nav__arrow slider-nav__arrow-prev"
+													style="--icon: url('../img/icon/02.svg');"></button>
+												<button type="button"
+													class="column-product__arrow column-product__arrow-next slider-nav__arrow slider-nav__arrow-next"
+													style="--icon: url('../img/icon/03.svg');"></button>
+											</div>
+										</div>
+
+										<div class="column-product__content content-popular">
+											<div class="content-popular__name">327С_ШП_2 Шкаф платяной 2-секционный
+											</div>
+											<div class="content-popular__text">Дуб с натуральным
+												Белый песок UI156 579</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="photobank__pagging pagging">
+							<a href="javascript:void(0);" class="pagging__arrow"
+								style='--icon:url(../img/pagging/01.svg)'></a>
+							<a href="javascript:void(0);" class="pagging__arrow"
+								style='--icon:url(../img/pagging/02.svg)'></a>
+							<ul class="pagging__list">
+								<li>
+									<a href="javascript:void(0);" class="pagging__item _active">1</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="pagging__item">2</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="pagging__item">3</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="pagging__item">4</a>
+								</li>
+							</ul>
+							<a href="javascript:void(0);" class="pagging__arrow"
+								style='--icon:url(../img/pagging/03.svg)'></a>
+							<a href="javascript:void(0);" class="pagging__arrow"
+								style='--icon:url(../img/pagging/04.svg)'></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('html/_social.htm',{})
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

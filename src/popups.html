@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="block">
+				<div class='block__container'>
+					<div class="block__row">
+						<ul>
+							<li style="margin-bottom: 10px;">
+								<a href="javascript:void(0);" data-popup="#popupcards">Карточка товара</a>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<a href="javascript:void(0);" data-popup="#mat-choise">Выбор матраса</a>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<a href="javascript:void(0);" data-popup="#coach-choise">Выбор дивана</a>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<a href="javascript:void(0);" data-popup="#delete">Удалить матрас</a>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<a href="javascript:void(0);" data-popup="#popupmaterial">Выбор материалов -
+									"Фасад/Каркас"</a>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<a href="javascript:void(0);" data-popup="#popuptextile">Выбор материалов -
+									Ткань</a>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<a href="javascript:void(0);" data-popup="#popupCards">Модальное окно для карточки
+									только в разделе Готовые проекты (фотобанк)</a>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<a href="javascript:void(0);" data-popup="#application">Заявка на чертеж и расчет</a>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<a href="javascript:void(0);" data-popup="#credit">Заказать расчет кредита
+								</a>
+							</li>
+							<li style="margin-bottom: 10px;">
+								<a href="javascript:void(0);" data-popup="#popupcalculation">Заказать расчет кредита -
+									Уведомление
+									после отправки формы
+								</a>
+							</li>
+
+							<li style="margin-bottom: 10px;">
+								<a href="javascript:void(0);" data-popup="#popupdrawing">Заявка на чертеж и расчет -
+									Уведомление
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	<div id="mat-choise" aria-hidden="true" class="popup popup-choise">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__top">
+					<div class="popup__title _title">Выбор матраса</div>
+					<button data-close type="button" class="popup__close"
+						style="--icon: url('../img/icon/05.svg');"></button>
+				</div>
+				<div class="popup-choise__content">
+					<div class="popup-choise__selected">
+						<p>Без матраса</p>
+						<a href="javascript:void(0);" class="btn">Выбрать</a>
+					</div>
+					<div class="popup-choise__item">
+						<div class="popup-choise__image">
+							<img src="./img/popup/mat1.png" alt="">
+						</div>
+						<div class="popup-choise__info">
+							<div class="popup-choise__value">
+								<div class="popup-choise__price">
+									235 900 ₽
+								</div>
+								<a href="" class="btn">Выбрать</a>
+							</div>
+							<div class="popup-choise__about">
+								<dl>
+									<dt>OLISSYS </dt>
+									|
+									<dd>
+										матрас
+									</dd>
+								</dl>
+								<p>
+									REAL
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="popup-choise__item">
+						<div class="popup-choise__image">
+							<img src="./img/popup/mat1.png" alt="">
+						</div>
+						<div class="popup-choise__info">
+							<div class="popup-choise__value">
+								<div class="popup-choise__price">
+									235 900 ₽
+								</div>
+								<a href="" class="btn">Выбрать</a>
+							</div>
+							<div class="popup-choise__about">
+								<dl>
+									<dt>OLISSYS </dt>
+									|
+									<dd>
+										матрас
+									</dd>
+								</dl>
+								<p>
+									REAL
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="popup-choise__item">
+						<div class="popup-choise__image">
+							<img src="./img/popup/mat1.png" alt="">
+						</div>
+						<div class="popup-choise__info">
+							<div class="popup-choise__value">
+								<div class="popup-choise__price">
+									235 900 ₽
+								</div>
+								<a href="" class="btn">Выбрать</a>
+							</div>
+							<div class="popup-choise__about">
+								<dl>
+									<dt>OLISSYS </dt>
+									|
+									<dd>
+										матрас
+									</dd>
+								</dl>
+								<p>
+									REAL
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="coach-choise" aria-hidden="true" class="popup popup-choise">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__top">
+					<div class="popup__title _title">Выбор дивана</div>
+					<button data-close type="button" class="popup__close"
+						style="--icon: url('../img/icon/05.svg');"></button>
+				</div>
+				<div class="popup-choise__content">
+					<div class="popup-choise__selected">
+						<p>Без дивана</p>
+						<a href="javascript:void(0);" class="btn">Выбрать</a>
+					</div>
+					<div class="popup-choise__item">
+						<div class="popup-choise__image">
+							<img src="./img/popup/coach1.png" alt="">
+						</div>
+						<div class="popup-choise__info">
+							<div class="popup-choise__value">
+								<div class="popup-choise__price">
+									235 900 ₽
+								</div>
+								<a href="" class="btn">Выбрать</a>
+							</div>
+							<div class="popup-choise__about">
+								<dl>
+									<dt>OLISSYS </dt>
+									|
+									<dd>
+										Диван
+									</dd>
+								</dl>
+								<p>
+									Длинный диван подлокотники 350 мм для кровати трансформер
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="popup-choise__item">
+						<div class="popup-choise__image">
+							<img src="./img/popup/coach1.png" alt="">
+						</div>
+						<div class="popup-choise__info">
+							<div class="popup-choise__value">
+								<div class="popup-choise__price">
+									235 900 ₽
+								</div>
+								<a href="" class="btn">Выбрать</a>
+							</div>
+							<div class="popup-choise__about">
+								<dl>
+									<dt>OLISSYS </dt>
+									|
+									<dd>
+										Диван
+									</dd>
+								</dl>
+								<p>
+									Длинный диван подлокотники 350 мм для кровати трансформер
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="popup-choise__item">
+						<div class="popup-choise__image">
+							<img src="./img/popup/coach1.png" alt="">
+						</div>
+						<div class="popup-choise__info">
+							<div class="popup-choise__value">
+								<div class="popup-choise__price">
+									235 900 ₽
+								</div>
+								<a href="" class="btn">Выбрать</a>
+							</div>
+							<div class="popup-choise__about">
+								<dl>
+									<dt>OLISSYS </dt>
+									|
+									<dd>
+										Диван
+									</dd>
+								</dl>
+								<p>
+									Длинный диван подлокотники 350 мм для кровати трансформер
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="delete" aria-hidden="true" class="popup popup-delete">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<p class="popup-delete__text">
+					Вы действительно хотите удалить матрас?
+				</p>
+				<div class="popup-delete__btns">
+					<a href="javascript:void(0);" class="btn btn--alt btn--hasicon"
+						style="--icon: url(../img/popup/del.svg); --size: 19px;">Удалить</a>
+					<a href="javascript:void(0);" data-close class="btn btn--alt btn--hasicon"
+						style="--icon: url(../img/popup/close.svg); --size: 14px;">Отменить</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="application" aria-hidden="true" class="popup popup-application">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__top">
+					<div class="popup__title _title">Заявка на чертеж и расчет</div>
+					<button data-close type="button" class="popup__close"
+						style="--icon: url('../img/icon/05.svg');"></button>
+				</div>
+				<div class="popup-application__body">
+					<form action="#" class="popup-application__form form">
+						<div class="form__item">
+							<label class="form__label">
+								Контактное лицо *
+							</label>
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder=""
+								class="input form__input" data-required>
+						</div>
+						<fieldset class="form__group">
+							<div class="form__item">
+								<label class="form__label">
+									Телефон *
+								</label>
+								<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder=""
+									class="input form__input" data-required="tel">
+							</div>
+							<div class="form__item">
+								<label class="form__label">
+									E-mail
+								</label>
+								<input autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder=""
+									class="input form__input">
+							</div>
+						</fieldset>
+						<fieldset class="form__group">
+							<div class="form__item">
+								<label class="form__label">
+									Высота помещения *
+								</label>
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder=""
+									class="input form__input" data-required>
+							</div>
+							<div class="form__item">
+								<label class="form__label">
+									Ширина помещения *
+								</label>
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder=""
+									class="input form__input " data-required>
+							</div>
+							<div class="form__item">
+								<label class="form__label">
+									Длина помещения *
+								</label>
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder=""
+									class="input form__input" data-required>
+							</div>
+						</fieldset>
+
+						<div class="form__item">
+							<label class="form__label">
+								Материал стен *
+							</label>
+							<select name="form[]" class="default" data-required data-unvalid="1"
+								data-error="Выберите материал">
+								<option value="1" selected>Выберите материал</option>
+								<option value="2">Пункт №2</option>
+								<option value="3">Пункт №3</option>
+								<option value="4">Пункт №4</option>
+							</select>
+						</div>
+						<fieldset class="form__images file-loader" data-type='images'>
+							<div class="file-loader__inner">
+								<div class="file-loader__files"></div>
+								<div class="file-loader__row">
+									<input id="preview-upload" class="file-loader__input visually-hidden" type="file"
+										accept="image/*, video/*" name="file" multiple>
+									<label class="label-upload" for="preview-upload"
+										style="--icon: url(../img/popup/photo.svg)">
+									</label>
+								</div>
+							</div>
+
+							<div class="file-loader__error"></div>
+						</fieldset>
+
+						<fieldset class="form__files file-loader" data-type='files'>
+							<div class="file-loader__inner">
+								<div class="file-loader__files"></div>
+								<div class="file-loader__row">
+									<input id="file-upload" class="file-loader__input visually-hidden" type="file"
+										accept="application/pdf" name="file" multiple>
+									<label class="label-upload" for="file-upload"
+										style="--icon: url(../img/popup/load.svg)">
+										Прикрепить документ
+									</label>
+								</div>
+							</div>
+
+							<div class="file-loader__error"></div>
+						</fieldset>
+						<div class="form__item">
+							<label for="" class="form__label">Комментарий</label>
+							<textarea autocomplete="off" name="form[]" placeholder="" data-error="Ошибка"
+								class="input"></textarea>
+						</div>
+						<div class="checkbox popup-application__chk">
+							<input id="req_1" data-error="Ошибка" checked class="checkbox__input" type="checkbox"
+								value="1" name="form[]" data-required>
+							<label for="req_1" class="checkbox__label">
+								<span class="checkbox__text">Нажимая на кнопку
+									отправить, я даю <a href="javascript:void(0);">согласие на обработку персональных
+										данных</a>
+								</span>
+							</label>
+						</div>
+						<button type="submit" class="btn">Отправить</button>
+					</form>
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+	<div id="credit" aria-hidden="true" class="popup popup-application">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__top">
+					<div class="popup__title _title">Заказать расчет кредита</div>
+					<button data-close type="button" class="popup__close"
+						style="--icon: url('../img/icon/05.svg');"></button>
+				</div>
+				<div class="popup-application__body">
+					<form action="#" class="popup-application__form form">
+						<div class="form__item">
+							<label class="form__label">
+								Контактное лицо *
+							</label>
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder=""
+								class="input form__input" data-required>
+						</div>
+						<fieldset class="form__group">
+							<div class="form__item">
+								<label class="form__label">
+									Телефон *
+								</label>
+								<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder=""
+									class="input form__input" data-required="tel">
+							</div>
+							<div class="form__item">
+								<label class="form__label">
+									E-mail
+								</label>
+								<input autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder=""
+									class="input form__input">
+							</div>
+						</fieldset>
+
+						<div class="form__item">
+							<label for="" class="form__label">Комментарий</label>
+							<textarea autocomplete="off" name="form[]" placeholder="" data-error="Ошибка"
+								class="input"></textarea>
+						</div>
+						<div class="checkbox popup-application__chk">
+							<input id="req_1" data-error="Ошибка" checked class="checkbox__input" type="checkbox"
+								value="1" name="form[]" data-required>
+							<label for="req_1" class="checkbox__label">
+								<span class="checkbox__text">Нажимая на кнопку
+									отправить, я даю <a href="javascript:void(0);">согласие на обработку персональных
+										данных</a>
+								</span>
+							</label>
+						</div>
+						<button type="submit" class="btn">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<template id="errors-code" data-fileMax="Количество загружаемых файлов не должно превышать 10"
+		data-fileType="Не является изображением или видео" data-fileSize="Превышает максимальный объем файла в 3.5мб"
+		data-size="3500000" data-max="10"></template>
+	@@include('html/_js.htm',{})
+
+
+</body>
+
+</html>

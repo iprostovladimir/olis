@@ -1,0 +1,80 @@
+//========================================================================================================================================================
+.videos__slide {
+  width: rrem(1000);
+}
+.plyr--video .plyr__controls {
+  position: initial !important;
+}
+.plyr--full-ui.plyr.plyr--video {
+  flex-direction: column-reverse;
+  .plyr__volume {
+    display: none;
+  }
+  .plyr__control--overlaid {
+    display: none;
+  }
+  .plyr__menu {
+    [data-plyr="settings"] {
+      display: none;
+    }
+  }
+  .plyr__progress {
+    @media (max-width: $mobile) {
+      --plyr-range-track-height: 2px;
+      --plyr-range-thumb-height: 10px;
+    }
+  }
+  .plyr__progress__buffer {
+    color: var(--whte);
+  }
+  .plyr__progress input[type="range"] {
+    color: var(--blue);
+  }
+
+  .plyr__progress {
+    font-size: 0;
+  }
+  .plyr__controls {
+    width: 100%;
+    background: var(--blackTwo);
+    padding: 35px rrem(50) 46px rrem(50);
+
+    @media (max-width: $pc) {
+      padding: rrem(15) rrem(50) rrem(15) rrem(50);
+    }
+    @media (max-width: $tablet) {
+      padding: rrem(16) rrem(0) rrem(40) rrem(0);
+    }
+  }
+  .icon--exit-fullscreen {
+    aspect-ratio: 1;
+    width: 30px;
+    background: var(--whte);
+    mask: var(--icon) center center/contain no-repeat;
+    -webkit-mask: var(--icon) center center/contain no-repeat;
+    margin-left: 71px;
+    @media (max-width: $mobile) {
+      margin-left: 35px;
+    }
+  }
+  .plyr-player-btn {
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    position: relative;
+    margin-right: 62px;
+    @media (max-width: $mobile) {
+      margin-right: 42px;
+    }
+    span {
+      position: absolute;
+      mask: var(--icon) center center/contain no-repeat;
+      -webkit-mask: var(--icon) center center/contain no-repeat;
+      background: var(--whte);
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
